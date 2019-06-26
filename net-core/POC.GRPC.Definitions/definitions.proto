@@ -1,0 +1,18 @@
+﻿syntax="proto3";
+
+
+package POC.GRPC;
+
+service Calculadora {
+	rpc Soma (Request) returns (Repply);
+	rpc Subtracao (Request) returns (Repply);
+}
+
+message Request {
+	double PrimeiroValor = 1;
+	double SegundoValor = 2;
+}
+
+message Repply {
+	double Resultado = 3;
+}

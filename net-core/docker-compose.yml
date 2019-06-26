@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  poc.grpc.server:
+    image: ${DOCKER_REGISTRY-}pocgrpcserver
+    build:
+      context: .
+      dockerfile: POC.GRPC.Server/Dockerfile
