@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "aci-calculadora.api"
+    },
+    "image": {
+      "value": "otaviopfonseca/calculadora-grpc-server:latest"
+    },
+    "port": {
+      "value": "50051"
+    },
+    "cpuCores": {
+      "value": 1
+    },
+    "memoryInGb": {
+      "value": 1
+    }
+  }
+}

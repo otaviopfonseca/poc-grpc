@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "_artifactsLocation": {
+      "type": "string"
+    },
+    "_artifactsLocationSasToken": {
+      "type": "securestring"
+    }
+  },
+  "variables": {
+    "comment": "Azure QuickStarts",
+    "TemplatesFolder": "Templates",
+    "ParametersFolder": "Parameters",
+    "CalculadoraApiResource": "ci-calculadora.api",
+    "CalculadoraGrpcServerResource":  "ci-calculadora.grpcserver",
+    "ExtensaoTemplate": ".json",
+    "ExtensaoParametros":  ".parameters.json"
+  },
+  "resources": [
+    {
+      "name": "variables('CalculadoraApiResource')",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2016-09-01",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
+          "contentVersion": "1.0.0.0"
+        },
+        "parametersLink": {
+          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('ParametersFolder'), '/', variables('CalculadoraApiResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    },
+    {
+      "name": "variables('CalculadoraGrpcServerResource')",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2016-09-01",
+      "dependsOn": [],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
+          "contentVersion": "1.0.0.0"
+        },
+        "parametersLink": {
+          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('ParametersFolder'), '/', variables('CalculadoraGrpcServerResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
+          "contentVersion": "1.0.0.0"
+        }
+      }
+    }
+  ],
+  "outputs": {
+  }
+}

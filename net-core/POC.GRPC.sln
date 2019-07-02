@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.GRPC.Server", "POC.GRPC
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0E147571-8C56-4053-8AAF-3500AF82831A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.GRPC.Api", "POC.GRPC.Api\POC.GRPC.Api.csproj", "{B909FC2D-3BB4-4D5D-819E-59FA44BE6977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.GRPC.Api", "POC.GRPC.Api\POC.GRPC.Api.csproj", "{B909FC2D-3BB4-4D5D-819E-59FA44BE6977}"
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "POC.GRPC.ResourceGroup", "POC.GRPC.ResourceGroup\POC.GRPC.ResourceGroup.deployproj", "{8E145267-E412-4F00-8379-A9C3F9B725B3}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "POC.GRPC.GrupoRecurso", "POC.GRPC.GrupoRecurso\POC.GRPC.GrupoRecurso.deployproj", "{2E17FE28-41C4-459D-8859-4DA7BC7FB4B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8E145267-E412-4F00-8379-A9C3F9B725B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E145267-E412-4F00-8379-A9C3F9B725B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E145267-E412-4F00-8379-A9C3F9B725B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E17FE28-41C4-459D-8859-4DA7BC7FB4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E17FE28-41C4-459D-8859-4DA7BC7FB4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E17FE28-41C4-459D-8859-4DA7BC7FB4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E17FE28-41C4-459D-8859-4DA7BC7FB4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
