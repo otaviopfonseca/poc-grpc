@@ -27,11 +27,11 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
+          "uri": "[concat(parameters('_artifactsLocation'), if(equals(last(parameters('_artifactsLocation')), '/'), '', '/'), variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         },
         "parametersLink": {
-          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('ParametersFolder'), '/', variables('CalculadoraApiResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
+          "uri": "[concat(parameters('_artifactsLocation'), if(equals(last(parameters('_artifactsLocation')), '/'), '', '/'), variables('ParametersFolder'), '/', variables('CalculadoraApiResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         }
       }
@@ -44,11 +44,11 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
+          "uri": "[concat(parameters('_artifactsLocation'), if(equals(last(parameters('_artifactsLocation')), '/'), '', '/'), variables('TemplatesFolder'), '/', 'AzureContainerInstance', variables('ExtensaoTemplate'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         },
         "parametersLink": {
-          "uri": "[concat(parameters('_artifactsLocation'), '/', variables('ParametersFolder'), '/', variables('CalculadoraGrpcServerResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
+          "uri": "[concat(parameters('_artifactsLocation'), if(equals(last(parameters('_artifactsLocation')), '/'), '', '/'), variables('ParametersFolder'), '/', variables('CalculadoraGrpcServerResource'), variables('ExtensaoParametros'), parameters('_artifactsLocationSasToken'))]",
           "contentVersion": "1.0.0.0"
         }
       }
