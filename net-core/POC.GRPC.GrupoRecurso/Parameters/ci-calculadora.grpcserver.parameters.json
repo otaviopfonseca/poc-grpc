@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "name": {
-      "value": "aci-calculadora.api"
+      "value": "acicalculadoragrpcserver"
     },
     "image": {
       "value": "otaviopfonseca/calculadora-grpc-server:latest"
@@ -12,10 +12,10 @@
       "value": "50051"
     },
     "cpuCores": {
-      "value": 1
+      "value": "1.0"
     },
     "memoryInGb": {
-      "value": 1
+      "value": "1.0"
     }
   }
 }

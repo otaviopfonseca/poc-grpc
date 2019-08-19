@@ -14,7 +14,8 @@
     "TemplatesFolder": "Templates",
     "ParametersFolder": "Parameters",
     "CalculadoraApiResource": "ci-calculadora.api",
-    "CalculadoraGrpcServerResource":  "ci-calculadora.grpcserver",
+    "CalculadoraGrpcServerResource": "ci-calculadora.grpcserver",
+    "AzureContainerRegistryDti":  "acr-dticontainerregistry",
     "ExtensaoTemplate": ".json",
     "ExtensaoParametros":  ".parameters.json"
   },

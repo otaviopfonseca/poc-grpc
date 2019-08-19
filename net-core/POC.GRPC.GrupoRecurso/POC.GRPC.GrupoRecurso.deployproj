@@ -25,6 +25,7 @@
   <ItemGroup>
     <Content Include="azuredeploy.parameters.json" />
     <Content Include="azuredeploy.json" />
+    <Content Include="Delete-Container.ps1" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
@@ -33,6 +34,8 @@
     <Content Include="Parameters\ci-calculadora.api.parameters.json" />
     <Content Include="Templates\AzureContainerInstance.json" />
     <Content Include="Parameters\ci-calculadora.grpcserver.parameters.json" />
+    <Content Include="Parameters\acr-dticontainerregistry.parameters.json" />
+    <Content Include="Templates\AzureContainerRegistry.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>

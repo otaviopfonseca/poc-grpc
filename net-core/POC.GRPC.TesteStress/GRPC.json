@@ -1,0 +1,21 @@
+{
+    "proto": "../POC.GRPC.Definitions/definitions.proto",
+    "call": "POC.GRPC.Calculadora.Soma",
+    "total": 5000,
+    "concurrency": 5,
+    "data": {
+        "PrimeiroValor": "2",
+		"SegundoValor": "5"
+    },
+    "metadata": {
+        "foo": "bar",
+        "trace_id": "{{.RequestNumber}}",
+        "timestamp": "{{.TimestampUnix}}"
+    },
+    "import-paths": [
+        "../POC.GRPC.Definitions/"
+    ],    
+    "host": "52.226.149.248:50051",
+	"insecure": true,
+	"output": "html"
+}
